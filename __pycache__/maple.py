@@ -1,4 +1,4 @@
-from flask import Flask, url_for
+from flask import Flask, url_for, render_template
 
 from urllib.request import Request, urlopen
 import json
@@ -12,8 +12,8 @@ firebase = firebase.FirebaseApplication('https://hackcmu2016-a3c18.firebaseio.co
 
 
 @app.route('/')
-def index():
-	return "Hello, World"
+def index(name=None):
+	return render_template('index.html', name=name)
 
 @app.route('/data')
 def data():
