@@ -19,12 +19,12 @@ def index(name=None):
 def data():
 	maplelist = pull_data(0)
 	put_data(maplelist,0)
-	result=firebase.get('/time',None)
+	result=firebase.get('/worldID',None)
 	return result
 
 def put_data(maplelist, worldID):
-	time=localtime
-	firebase.put('/time',str(time) + str(worldID), maplelist)
+	time=localtime()
+	firebase.put('/worldID',str(worldID), maplelist)
 
 
 def pull_data(worldID):
