@@ -22,6 +22,7 @@
       background-image: url("http://i.imgur.com/P5S69Xw.jpg");
       color: #fff;
       padding: 300px 25px;
+      height: 500px;
       font-family: Montserrat, sans-serif;
   }
   .container-fluid {
@@ -78,8 +79,8 @@
   }
   .panel-footer .btn:hover {
       border: 1px solid #f4511e;
-      background-color: #fff !important;
-      color: #f4511e;
+      background-color: #12CC1E !important;
+      color: #12CC1E;
   }
   .panel-heading {
       color: #fff !important;
@@ -108,7 +109,7 @@
   }
   .navbar {
       margin-bottom: 0;
-      background-color: #f4511e;
+      background-color: #FFA500 !important;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -118,15 +119,16 @@
       font-family: Montserrat, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
+      color: #fff;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #f4511e !important;
-      background-color: #fff !important;
+      color: #f4511e ;
+      background-color: #f88 !important;
   }
   .navbar-default .navbar-toggle {
       border-color: transparent;
-      color: #fff !important;
+      background-color: #f88 !important;
+      color: #f8f !important;
   }
   footer .glyphicon {
       font-size: 20px;
