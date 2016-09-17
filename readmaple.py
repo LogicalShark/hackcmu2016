@@ -7,6 +7,8 @@ from time import localtime
 
 NUM_WORLDS=6
 
+@app.route(‘/api/put’, methods=[‘GET’, ‘POST’])
+
 def fireput(maplellist, worldID):
 	form = FirePut()
 	if form.validate_on_submit():
@@ -33,5 +35,3 @@ firebase = firebase.FirebaseApplication(‘https://hackcmu2016-a3c18.firebaseio.
 
 for i in range(NUM_WORLDS):
 	fireput(pull_data(i),i)
-
-@app.route(‘/api/put’, methods=[‘GET’, ‘POST’])
