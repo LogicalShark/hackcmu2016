@@ -1,10 +1,10 @@
-function tableInsert()
+function tableInsert(var num)
 {
 	var myFirebaseRef = new Firebase("https://maple-6845a.firebaseio.com/");
 	for(var n=0; n<5; n++)
 	{
 		myFirebaseRef.child("worldID/"+n+"data/table/").on("value", function(snapshot) {
-			for(var x = 0; x<2; x++)
+			for(var x = 0; x<num; x++)
 			{
 				var time = snapshot.val()[x][0];
 				var image = "http://maplestory.io"+snapshot.val()[x][1];
