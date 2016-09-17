@@ -31,7 +31,7 @@ def pull_data(worldID):
 	return maplelist
 
 app = Flask(__name__)
-firebase = firebase.FirebaseApplication(‘https://hackcmu2016-a3c18.firebaseio.com/’, None)
+firebase = firebase.FirebaseApplication('https://hackcmu2016-a3c18.firebaseio.com/', None)
 
 for i in range(NUM_WORLDS):
 	fireput(pull_data(i),i)
