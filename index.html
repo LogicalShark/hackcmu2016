@@ -3,6 +3,7 @@
 <head>
   <title>ADDM</title>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="style/main.css">
@@ -69,29 +70,6 @@
     </div>
   </div>
 </div>
-<div class="w3-container">
-<h5>Ongoing Item Transactions</h5>
-  <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
-    <tr>
-      <td>Scrolls</td>
-      <td>1331100</td>
-    </tr>
-    <tr>
-      <td>Wisdom Crystals</td>
-      <td>20323</td>
-    </tr>
-    <tr>
-      <td>Stuff</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td>Stuff</td>
-      <td>1</td>
-    </tr>
-  </table><br>
-  <!-- <button class="w3-btn">More Countries  <i class="fa fa-arrow-right"></i></button> -->
-</div>
-
 <!-- Container (Services Section) -->
 <div id="data" class="container-fluid text-center">
   <h2>Data</h2>
@@ -133,34 +111,64 @@
     </div>
   </div>
 </div>
-
 <div id="portfolio" class="container-fluid text-center bg-grey">
   <h2>Code</h2><br>
   <h4>What we have created</h4>
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
+        <img src="backend.jpg" alt="Paris" width="400" height="300">
         <p><strong>Back End Code</strong></p>
-        <p> </p>
+        <p><a href="http://flask.pocoo.org/">Flask</a>
+        <br><a href="firebase.google.com">Firebase</a></p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
+        <img src="frontend.jpg" alt="New York" width="400" height="300">
         <p><strong>Front End Code</strong></p>
-        <p> </p>
+        <p></p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
+        <img src="analytics.jpg" alt="San Francisco" width="400" height="300">
         <p><strong>Data Analytics</strong></p>
         <p> </p>
       </div>
     </div>
   </div><br>
-  
+<div class="w3-container">
+<h4>Ongoing Item Transactions</h4>
+<!-- world name image price timestamp -->
+  <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white" style="font-size:18px;">
+    <tr style="font-size:22px;">
+      <td><img src="https://lh3.googleusercontent.com/rEUe8A2Dzw7Kbkhkv3Zzp7VOl8mi0NteVfbvWtppi04eiL3jKVrgUa2pUblfRGdYPkrW=w300" width="50px" height="50px">Item</td>
+      <td>Price</td>
+      <td>World</td>
+      <td>Timestamp</td>
+      <td>Hide</td>
+    </tr>
+<!--<tr>
+      <td><img src="url" height:20px width:20px>name</td>
+      <td>price</td>
+      <td>world</td>
+      <td>time</td>
+      <td><span onclick="this.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">X</span></td>
+    </tr>
+ -->    <tr>
+      <td>Stuff</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Stuff</td>
+      <td>1</td>
+    </tr>
+  </table><br>
+  <button class="w3-btn">Past Items<i class="fa fa-arrow-right"></i></button>
+</div>
+
+
   <h2>What our customers say</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     - Indicators 
@@ -197,10 +205,10 @@
   <h2 class="text-center">CONTACT</h2>
   <div class="row">
     <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Pittsburgh, US</p>
+      <p>Contact us and we'll get back to you within 48 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Pittsburgh, PA</p>
       <p><span class="glyphicon glyphicon-phone"></span> +1 703-980-3798</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> MAlder@andrew.cmu.edu</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>malder@andrew.cmu.edu</p>
     </div>
     <div class="col-sm-7 slideanim">
       <div class="row">
@@ -220,41 +228,48 @@
     </div>
   </div>
 </div>
-<div id="googleMap" style="height:400px;width:100%;"></div>
 
-<!-- Add Google Maps -->
-<!-- <script src="http://maps.googleapis.com/maps/api/js"></script>
-<script>
-var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
-function initialize() {
-var mapProp = {
-  center:myCenter,
-  zoom:12,
-  scrollwheel:false,
-  draggable:false,
-  mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-
-var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
-var marker = new google.maps.Marker({
-  position:myCenter,
-  });
-
-marker.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-</script> -->
-
-<footer class="container-fluid text-center">
+<div class="w3-container w3-dark-grey w3-padding-32">
+  <div class="w3-row">
+    <div class="w3-container w3-third">
+      <h5 class="w3-bottombar w3-border-green">About Us</h5>
+      <p><a style="color:white;" href="">Marcus Alder</a></p>
+      <p><a style="color:white;" href="">Jeffrey Diep</a></p>
+      <p><a style="color:white;" href="">Namita Dongre</a></p>
+      <p><a style="color:white;" href="">Hyungju Moon</a></p>
+    </div>
+    <div class="w3-container w3-third">
+      <h5 class="w3-bottombar w3-border-red">Resources Used</h5>
+      <p><a style="color:white;" href="http://firebase.google.com">Firebase</a></p>
+      <p><a style="color:white;" href="http://maplestory.io">MapleStory</a></p>
+      <p><a style="color:white;" href="http://www.w3schools.com/w3css/default.asp" target="_blank">W3Schools</a></p>
+    </div>
+    <div class="w3-container w3-third">
+      <h5 class="w3-bottombar w3-border-orange">Other Information</h5>
+      <p><a style="color:white;" href="https://github.com/LogicalShark/hackcmu2016">Github Repo</a></p>
+      <!-- <p>Things</p> -->
+      <p></p>
+      <p></p>
+    </div>
+  </div>
+  <div class="w3-row">
+    <div class="w3-container w3-third">
+    </div>
+    <div class="w3-container w3-third" style="text-align:center;">
+      <a style="color:orange;font-size:14px;" href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <br>
+      <p style="color:#FFF"> Copyright 2016 </p>
+    </div>
+  </div>
+</div>
+<!-- <footer class="container-fluid text-center" style="background-color:#616161 !important; height:200px !important;">
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p> Copyright 2016 </p>
-</footer>
-
+  <p style="color:#FFF"> Copyright 2016 </p>
+</footer> -->
 <script>
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
@@ -310,3 +325,31 @@ $(document).ready(function(){
 </body>
 </html>
 
+
+<!-- <div id="googleMap" style="height:400px;width:100%;"></div> -->
+
+<!-- Add Google Maps -->
+<!-- <script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:12,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script> -->
