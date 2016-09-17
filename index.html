@@ -32,7 +32,7 @@
         <li><a style="color:#FFF !important;" href="#Problem/Solution">Problem/Solution</a></li>
         <li><a style="color:#FFF !important;" href="#data">Data</a></li>
         <li><a style="color:#FFF !important;" href="#code">Code</a></li>
-        <li><a style="color:#FFF !important;" href="#about us">About Us</a></li>
+        <li><a style="color:#FFF !important;" href="#aboutus">About Us</a></li>
         <li><a style="color:#FFF !important;" href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -114,7 +114,24 @@
     </div>
   </div>
 </div>
-<div id="portfolio" class="container-fluid text-center bg-grey">
+<div class="w3-container">
+<h4>Ongoing Item Transactions</h4>
+<!-- world name image price timestamp -->
+  <table id="table" class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white" style="font-size:18px;">
+    <tr style="font-size:22px;">
+      <td style="vertical-align:center;"><img src="img/market.png" width="50px" height="50px" style="height:">Item</td>
+      <td>Price</td>
+      <td>World</td>
+      <td>Timestamp</td>
+      <td style="text-align:right;">Hide</td>
+    </tr>
+    <script>
+      tableInsert();
+    </script>
+  </table><br>
+  <button class="w3-btn" onclick="tableInsert()">Add Recent Items<i class="fa fa-arrow-right"></i></button>
+</div>
+<div id="code" class="container-fluid text-center bg-grey">
   <h2>Code</h2><br>
   <h4>What we have created</h4>
   <div class="row text-center slideanim">
@@ -140,56 +157,39 @@
       </div>
     </div>
   </div><br>
-<div class="w3-container">
-<h4>Ongoing Item Transactions</h4>
-<!-- world name image price timestamp -->
-  <table id="table" class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white" style="font-size:18px;">
-    <tr style="font-size:22px;">
-      <td style="vertical-align:center;"><img src="img/market.png" width="50px" height="50px" style="height:">Item</td>
-      <td>Price</td>
-      <td>World</td>
-      <td>Timestamp</td>
-      <td style="text-align:right;">Hide</td>
-    </tr>
-    <script>
-      tableInsert();
-    </script>
-  </table><br>
-  <button class="w3-btn" onclick="tableInsert()">Add Recent Items<i class="fa fa-arrow-right"></i></button>
-</div>
 
 
-  <h2>Our Experience at Hack CMU</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel"> 
-    <ol class="carousel-indicators">
-      <lidata-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <lidata-target="#myCarousel" data-slide-to="1"></li>
-      <lidata-target="#myCarousel" data-slide-to="2"></li>
-      <lidata-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
+<h2 id="aboutus">Our Experience at Hack CMU</h2>
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel"> 
+  <ol class="carousel-indicators">
+    <lidata-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <lidata-target="#myCarousel" data-slide-to="1"></li>
+    <lidata-target="#myCarousel" data-slide-to="2"></li>
+    <lidata-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
 
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4 style="color:#FFF">"Oh, I know this song! 🎵 Burn it all Bow wow wow🎵 "<br><span style="font-style:normal;">-Marcus Alder</span></h4>
-      </div>
-      <div class="item">
-        <h4 style="color:#FFF">"Please pass me the Red Bull" ⁽(◍˃̵͈̑ᴗ˂̵͈̑)⁽<br><span style="font-style:normal;">-Jeffrey Diep</span></h4>
-      </div>
-      <div class="item">
-        <h4 style="color:#FFF">"Bagels arent here yet lol" (ﾉ･д･)ﾉ<br><span style="font-style:normal;">-Namita Dongre</span></h4>
-      <div class="item">
-        <h5 style="color:#FFF">Wokr<br><span style="font-style:normal;">-Namidgre</span></h5>
-      </div>
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <h4 style="color:#FFF">"Oh, I know this song! 🎵 Burn it all Bow wow wow🎵 "<br><span style="font-style:normal;">-Marcus Alder</span></h4>
     </div>
+    <div class="item">
+      <h4 style="color:#FFF">"Please pass me the Red Bull" ⁽(◍˃̵͈̑ᴗ˂̵͈̑)⁽<br><span style="font-style:normal;">-Jeffrey Diep</span></h4>
+    </div>
+    <div class="item">
+      <h4 style="color:#FFF">"Bagels arent here yet lol" (ﾉ･д･)ﾉ<br><span style="font-style:normal;">-Namita Dongre</span></h4>
+    <div class="item">
+      <h5 style="color:#FFF">Wokr<br><span style="font-style:normal;">-Namidgre</span></h5>
+    </div>
+  </div>
 
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
   </div>
 </div>
 <!-- Container (Contact Section) -->
