@@ -79,8 +79,8 @@
   }
   .panel-footer .btn:hover {
       border: 1px solid #f4511e;
-      background-color: #12CC1E !important;
-      color: #12CC1E;
+      background-color: #f4511e  !important;
+      color: #f4511e ;
   }
   .panel-heading {
       color: #fff !important;
@@ -109,7 +109,8 @@
   }
   .navbar {
       margin-bottom: 0;
-      background-color: #FFA500 !important;
+      background-color: #f4511e !important;
+      color: #fff !important;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -119,16 +120,16 @@
       font-family: Montserrat, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
-      color: #fff;
+      color: #f8f;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #f4511e ;
-      background-color: #f88 !important;
+      color: #fff ;
+      background-color: #FFA500 !important;
   }
   .navbar-default .navbar-toggle {
       border-color: transparent;
-      background-color: #f88 !important;
-      color: #f8f !important;
+      background-color: #fff !important;
+      color: #fff !important;
   }
   footer .glyphicon {
       font-size: 20px;
