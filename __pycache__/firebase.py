@@ -7,7 +7,7 @@ from time import localtime
 
 NUM_WORLDS=6
 
-#@app.route(‘/api/put’, methods=[‘GET’, ‘POST’])
+@app.route('/api/put', methods=['GET', 'POST'])
 
 def fireput(maplellist, worldID):
 	form = FirePut()
