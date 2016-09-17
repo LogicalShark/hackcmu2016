@@ -50,7 +50,7 @@
       margin-bottom: 10px;
   }
   .carousel-control.right, .carousel-control.left {
-      background-image: none;
+      background-image: url("http://i.imgur.com/4j2YlH4.jpg");
       color: #f4511e;
   }
   .carousel-indicators li {
@@ -60,6 +60,7 @@
       background-color: #f4511e;
   }
   .item h4 {
+    background-image: url("http://i.imgur.com/4j2YlH4.jpg");
       font-size: 19px;
       line-height: 1.375em;
       font-weight: 400;
@@ -70,6 +71,7 @@
       font-style: normal;
   }
   .panel {
+    background-image: url("http://i.imgur.com/4j2YlH4.jpg");
       border: 1px solid #f4511e;
       border-radius:0 !important;
       transition: box-shadow 0.5s;
