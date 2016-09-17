@@ -2,7 +2,7 @@ from urllib.request import Request, urlopen
 from firebase import firebase
 import json
 from flask import Flask
-from .forms import FirePut
+from forms import FirePut
 from time import localtime
 
 NUM_WORLDS=6
