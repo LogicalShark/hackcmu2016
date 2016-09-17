@@ -11,6 +11,9 @@
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script src="main.js"></script>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
@@ -117,21 +120,21 @@
   <div class="row text-center slideanim">
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="backend.jpg" alt="Paris" width="400" height="300">
+        <!-- <img src="backend.jpg" alt="Paris" width="400" height="300"> -->
         <p><strong>Back End Code</strong></p>
         <p></p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="frontend.jpg" alt="New York" width="400" height="300">
+        <!-- <img src="frontend.jpg" alt="New York" width="400" height="300"> -->
         <p><strong>Front End Code</strong></p>
         <p></p>
       </div>
     </div>
     <div class="col-sm-4">
       <div class="thumbnail">
-        <img src="analytics.jpg" alt="San Francisco" width="400" height="300">
+        <!-- <img src="analytics.jpg" alt="San Francisco" width="400" height="300"> -->
         <p><strong>Data Analytics</strong></p>
         <p> </p>
       </div>
@@ -148,13 +151,9 @@
       <td>Timestamp</td>
       <td style="text-align:right;">Hide</td>
     </tr>
-    <tr>
-      <td>Stuff</td>
-      <td>1</td>
-      <td>1</td>
-      <td>1</td>
-      <td><span onclick="this.parentElement.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">X</span></td>
-    </tr>
+    <script>
+      tableInsert();
+    </script>
     <tr>
       <td>Stuff</td>
       <td>1</td>
@@ -163,7 +162,7 @@
       <td><span onclick="this.parentElement.parentElement.style.display='none'" class="w3-closebtn w3-padding w3-margin-right w3-medium">X</span></td>
     </tr>
   </table><br>
-  <button class="w3-btn">More Items<i class="fa fa-arrow-right"></i></button>
+  <button class="w3-btn" onclick="tableInsert()">Add Recent Items<i class="fa fa-arrow-right"></i></button>
 </div>
 
 
