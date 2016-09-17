@@ -15,8 +15,13 @@
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
   <script src="main.js"></script>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
+<body onload="barsInsert()" id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<p id="Scaniadum" style="display:none;"></p>
+<p id="Windiadum" style="display:none;"></p>
+<p id="Beradum" style="display:none;"></p>
+<p id="Khroadum" style="display:none;"></p>
+<p id="MYBCKNdum" style="display:none;"></p>
+<p id="GRAZEDdum" style="display:none;"></p>
 <nav class="navbar navbar-default navbar-fixed-top" >
   <div class="container" >
     <div class="navbar-header" >
@@ -46,7 +51,7 @@
 </div>
 
 <!-- Container (About Section) -->
-<div id="about" class="container-fluid">
+<div id="Problem/Solution" class="container-fluid">
   <div class="row">
     <div class="col-sm-8">
       <h2>Problem</h2><br>
@@ -76,9 +81,79 @@
 <!-- Container (Services Section) -->
 <div id="data" class="container-fluid text-center">
   <h2>Data</h2>
-  <h3>Graphs</h3>
+  <h3>World Stability (100000G)</h3>
   <br>
-  <div class="row slideanim">
+  <p>Scania</p>
+  <div class="w3-progress-container w3-grey" style="padding:5px;">
+    <div id="Scania" class="w3-progressbar w3-green" style="width:0%">
+      <div id="Scaniatext" class="w3-center w3-text-white">0</div>
+    </div>
+  </div>
+  <div class="w3-progress-container w3-grey">
+    <div id="Scaniadev" class="w3-progressbar w3-green" style="width:0%">
+      <div id="Scaniatextdev" class="w3-center w3-text-white">0</div>
+    </div>
+  </div>
+  <p>Windia</p>
+  <div class="w3-progress-container w3-grey" style="padding:5px;">
+    <div id="Windia" class="w3-progressbar w3-blue" style="width:0%">
+      <div id="Windiatext" class="w3-center w3-text-white">0</div>
+    </div>
+  </div>
+  <div class="w3-progress-container w3-grey">
+    <div id="Windiadev" class="w3-progressbar w3-blue" style="width:0%">
+      <div id="Windiatextdev" class="w3-center w3-text-white">0</div>
+    </div>
+  </div>
+  <p>Bera</p>
+  <div class="w3-progress-container w3-grey" style="padding:5px;">
+    <div id="Bera" class="w3-progressbar w3-orange" style="width:0%">
+      <div id="Beratext" class="w3-center w3-text-white">0</div>
+    </div>
+  </div>
+  <div class="w3-progress-container w3-grey">
+    <div id="Beradev" class="w3-progressbar w3-orange" style="width:0%">
+      <div id="Beratextdev" class="w3-center w3-text-white">0</div>
+    </div>
+  </div>
+  <p>Khroa</p>
+  <div class="w3-progress-container w3-grey" style="padding:5px;">
+    <div id="Khroa" class="w3-progressbar w3-yellow" style="width:0%">
+      <div id="Khroatext" class="w3-center w3-text-white">0</div>
+    </div>
+  </div>
+  <div class="w3-progress-container w3-grey">
+    <div id="Khroadev" class="w3-progressbar w3-yellow" style="width:0%">
+      <div id="Khroatextdev" class="w3-center w3-text-white">0</div>
+    </div>
+  </div>
+  <p>MYBCKN</p>
+  <div class="w3-progress-container w3-grey" style="padding:5px;">
+    <div id="MYBCKN" class="w3-progressbar w3-red" style="width:0%">
+      <div id="MYBCKNtext" class="w3-center w3-text-white">0</div>
+    </div>
+  </div>
+  <div class="w3-progress-container w3-grey">
+    <div id="MYBCKNdev" class="w3-progressbar w3-red" style="width:0%">
+      <div id="MYBCKNtextdev" class="w3-center w3-text-white">0</div>
+    </div>
+  </div>
+  <p>GRAZED</p>
+  <div class="w3-progress-container w3-grey" style="padding:5px;">
+    <div id="GRAZED" class="w3-progressbar w3-purple" style="width:0%">
+      <div id="GRAZEDtext" class="w3-center w3-text-white">0</div>
+    </div>
+  </div>
+  <div class="w3-progress-container w3-grey">
+    <div id="GRAZEDdev" class="w3-progressbar w3-purple" style="width:0%">
+      <div onload="barsInsert();" id="GRAZEDtextdev" class="w3-center w3-text-white">0</div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  barsInsert();
+  // setTimeout(barsInsert(), 3000);
+  </script>
+  <!-- <div class="row slideanim">
     <div class="col-sm-4">
       <span class="glyphicon glyphicon-off logo-small"></span>
       <h4>World 1 Stability</h4>
@@ -112,7 +187,7 @@
       <h4 style="color:#303030;">HARD WORK</h4>
       <p>Lorem ipsum dolor sit amet..</p>
     </div>
-  </div>
+  </div> -->
 </div>
 <div class="w3-container">
 <h3 style="text-align:center;">Ongoing Item Transactions</h3>
@@ -125,9 +200,6 @@
       <td>Timestamp</td>
       <td style="text-align:right;">Hide</td>
     </tr>
-    <script>
-      tableInsert(3);
-    </script>
   </table><br>
   <button style="display:block;margin:auto;" class="w3-btn" onclick="tableInsert(1)">Add Recent Items<i class="fa fa-arrow-right"></i></button>
 </div>
@@ -157,7 +229,9 @@
       </div>
     </div>
   </div><br>
-
+  <script type="text/javascript">
+  tableInsert(3);
+  </script>
 
 <h2 id="aboutus">Our Experience at Hack CMU</h2>
 <div id="myCarousel" class="carousel slide text-center" data-ride="carousel"> 
@@ -173,13 +247,25 @@
       <h4 style="color:#FFF">"Oh, I know this song! 🎵 Burn it all Bow wow wow🎵 "<br><span style="font-style:normal;">-Marcus Alder</span></h4>
     </div>
     <div class="item">
+      <h4 style="color:#FFF">"I'm taking a 2 hour nap"<br><span style="font-style:normal;">-Namita Dongre</span></h4>
+    </div>
+    <div class="item">
+      <h4 style="color:#FFF">"I'm haven't died yet"<br><span style="font-style:normal;">-Hyungju Moon</span></h4>
+    </div>
+    <div class="item">
       <h4 style="color:#FFF">"Please pass me the Red Bull" ⁽(◍˃̵͈̑ᴗ˂̵͈̑)⁽<br><span style="font-style:normal;">-Jeffrey Diep</span></h4>
+    </div>
+    <div class="item">
+      <h4 style="color:#FFF">"Please don't crash"<br><span style="font-style:normal;">-Hyungju Moon</span></h4>
     </div>
     <div class="item">
       <h4 style="color:#FFF">"Bagels arent here yet lol" (ﾉ･д･)ﾉ<br><span style="font-style:normal;">-Namita Dongre</span></h4>
     </div>
     <div class="item">
-      <h5 style="color:#FFF">Wokr<br><span style="font-style:normal;">-Namidgre</span></h5>
+      <h4 style="color:#FFF">"I slept through my alarm"<br><span style="font-style:normal;">-Marcus Alder</span></h4>
+    </div>
+    <div class="item">
+      <h4 style="color:#FFF">"I haven't changed my playlist since middle school"<br><span style="font-style:normal;">-Hyungju Moon</span></h4>
     </div>
   </div>
 
@@ -315,7 +401,6 @@ $(document).ready(function(){
   };
   firebase.initializeApp(config);
 </script>
-
 </body>
 </html>
 
