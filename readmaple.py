@@ -13,8 +13,8 @@ def fireput(maplellist, worldID):
 		putData = maplelist
 		time = str(localtime())
 		firebase.put('/time', time + str(worldID), putData)
-		return render_template(‘api-put-result.html’, form=form, putData=putData)
-	return render_template(‘My-Form.html’)
+		return render_template('api-put-result.html', form=form, putData=putData)
+	return render_template('index.html')
 
 def pull_data(worldID):
 	#pull request
