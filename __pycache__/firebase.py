@@ -1,5 +1,5 @@
 from urllib.request import Request, urlopen
-from firebase import firebase
+# from firebase import firebase
 import json
 from flask import Flask
 from .forms import FirePut
