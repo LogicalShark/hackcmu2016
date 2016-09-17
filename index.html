@@ -5,39 +5,39 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style/main.css">
   <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="style/main.css">
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+<nav class="navbar navbar-default navbar-fixed-top" background-color = "#f8f">
+  <div class="container" background-color = "#f8f">
+    <div class="navbar-header" background-color = "#f8f">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" background-color = "#f8f">
+        <span background-color = "#f8f" class="icon-bar"></span>
+        <span background-color = "#f8f" class="icon-bar"></span>
+        <span background-color = "#f8f" class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#myPage">ADDM</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#Problem/Solution">Problem/Solution</a></li>
-        <li><a href="#data">Data</a></li>
-        <li><a href="#code">Code</a></li>
-        <li><a href="#about us">About Us</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li background-color = "#f8f"><a background-color = "#f8f" href="#Problem/Solution">Problem/Solution</a></li>
+        <li background-color = "#f8f"><a background-color = "#f8f" href="#data">Data</a></li>
+        <li background-color = "#f8f"><a background-color = "#f8f" href="#code">Code</a></li>
+        <li background-color = "#f8f"><a background-color = "#f8f" href="#about us">About Us</a></li>
+        <li background-color = "#f8f"><a background-color = "#f8f" href="#contact">Contact</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>HackCMU 2016</h1>
-  <p>Modeling and Analysis of Financial Markets in MapleStory</p>
+  <h1 style="color:#FFFFFF">HackCMU 2016</h1>
+  <p style="color:#FFFFFF">Modeling and Analysis of Financial Markets in MapleStory</p>
   </form>
 </div>
 
@@ -112,7 +112,7 @@
   </div>
 </div>
 
-<!-- Container (Portfolio Section)
+< Container (Portfolio Section)
 <div id="portfolio" class="container-fluid text-center bg-grey">
   <h2>Code</h2><br>
   <h4>What we have created</h4>
@@ -201,14 +201,12 @@
     </div>
   </div>
 </div>
- -->
 <div id="googleMap" style="height:400px;width:100%;"></div>
 
 <!-- Add Google Maps -->
 <!-- <script src="http://maps.googleapis.com/maps/api/js"></script>
 <script>
 var myCenter = new google.maps.LatLng(41.878114, -87.629798);
-
 function initialize() {
 var mapProp = {
   center:myCenter,
@@ -217,16 +215,12 @@ var mapProp = {
   draggable:false,
   mapTypeId:google.maps.MapTypeId.ROADMAP
   };
-
 var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-
 var marker = new google.maps.Marker({
   position:myCenter,
   });
-
 marker.setMap(map);
 }
-
 google.maps.event.addDomListener(window, 'load', initialize);
 </script> -->
 
@@ -245,10 +239,8 @@ $(document).ready(function(){
     if (this.hash !== "") {
       // Prevent default anchor click behavior
       event.preventDefault();
-
       // Store hash
       var hash = this.hash;
-
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
@@ -264,7 +256,6 @@ $(document).ready(function(){
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
-
       var winTop = $(window).scrollTop();
         if (pos < winTop + 600) {
           $(this).addClass("slide");
@@ -291,4 +282,3 @@ $(document).ready(function(){
 
 </body>
 </html>
-
